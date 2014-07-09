@@ -19,7 +19,8 @@ create_window (void)
 	//GtkWidget *window;
 	GdkWindow *window;
 	GdkWindowAttr attr;
-	attr.window_type = GTK_WINDOW_TOPLEVEL;
+	//attr.window_type = GTK_WINDOW_TOPLEVEL;
+	attr.window_type = GDK_WINDOW_TOPLEVEL;
 	attr.wclass = GDK_INPUT_OUTPUT;
 	attr.event_mask = GDK_KEY_PRESS_MASK | GDK_STRUCTURE_MASK | GDK_EXPOSURE_MASK;
 	attr.width = 400;
@@ -60,7 +61,7 @@ create_window (void)
 	
 
 	/* Exit when the window is closed */
-	g_signal_connect (window, "destroy", G_CALLBACK (gtk_main_quit), NULL);
+	//g_signal_connect (window, "destroy", G_CALLBACK (gtk_main_quit), NULL);
 
 	
 	
