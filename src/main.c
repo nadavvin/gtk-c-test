@@ -42,7 +42,7 @@ create_window (void)
 	cairo_region_t *r;
 
 	//cairo_create (cr);
-	buf = gdk_pixbuf_new_from_file ("/home/carmit/nadav/projects/c-gtk-test/src/drawing.svg", &e);
+	buf = gdk_pixbuf_new_from_file ("drawing.svg", &e);
 	if(!buf) {
 		fprintf(stderr, "%s\n", e->message);
 		g_error_free(e);
